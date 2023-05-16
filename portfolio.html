@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>My Portfolio</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        <!-- My CSS -->
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- My JS-->
+        <script src="index.js"></script>
+    </head>
+    <body>
+
+        <!-- Sidebar pop-up, contains links to home.html, portfolio.html, and soundboard.html-->
+        <div id="sidebar">
+            <ul class="side-link">
+                <li><button id="close">&times;</button></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">My Portfolio</a></li>
+                <li><a href="/soundboard.html">Soundboard</a></li>
+            </ul>
+        </div>
+
+        <!--https://www.tutorialrepublic.com/faq/how-to-create-fixed-header-or-footer-using-css.php-->
+        <!-- Header fixed to top of window, contains Goosefisher logo, Mollee Ye, and sidebar button -->
+        <header>
+            <div class="row header-container">
+                <div class="col"><a href="/index.html"><img src="media/logos/Goosefisher.png" alt="Goosefisher" id="logo" width="105" height="105"></a></div>
+                <div class="col title"><h1 id="head-title">Mollee Ye</h1></div>
+                <div class="col side-button" style="padding: 25px;"><button id="openSidebar">&#9776;</button></div>
+            </div>
+        </header>
+
+        <!-- Box that goes under header when at the top of the page -->
+        <div id="buffer"></div>
+
+        <!-- Main content of page -->
+        <main>
+            <!-- Page title section -->
+            <h1 class="pgheader">My Portfolio</h1>
+            <hr>
+
+            <!-- Alternating rows of pictures and captions with 2 in every row -->
+            <!-- Pictures are fitted to specific height, Captions consist of model name, designer, and time -->
+            <div class="text-center">
+                <div class="row pic">
+                    <div class="col"><img src="media/origami/og/dragon.jpg" id="dragon" alt="Eastern Dragon"></div>
+                    <div class="col"><img src="media/origami/og/elephant.jpg" id="elephant" alt="Elephant"></div>
+                </div>
+
+                <div class="row desc">
+                    <div class="col">
+                        <h3>Eastern Dragon</h3>
+                        <p>Designer: <span class="text-muted">Jun Maekawa (Genuine Origami [2008])</span></p>
+                        <p>Folded: <span class="text-muted">2023</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Elephant</h3>
+                        <p>Designer: <span class="text-muted">Robert J. Lang</span></p>
+                        <p>Folded: <span class="text-muted">2022</span></p>
+                    </div>
+                </div>
+
+                <div class="row pic text-center">
+                    <div class="col"><img src="media/origami/og/lion.jpg" id="lion" alt="Lion"></div>
+                    <div class="col"><img src="media/origami/og/Lugia.jpg" id="Lugia" alt="Lugia"></div>
+                </div>
+
+                <div class="row desc">
+                    <div class="col">
+                        <h3>Lion</h3>
+                        <p>Designer: <span class="text-muted">Satoshi Kamiya (Works of Satoshi Kamiya 2 [2002-2009])</span></p>
+                        <p>Folded: <span class="text-muted">2022</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Lugia</h3>
+                        <p>Designer: <a href="https://www.youtube.com/@ino87origami/videos" class="text-muted">ino87</a></p>
+                        <p>Folded: <span class="text-muted">2022</span></p>
+                    </div>
+                </div>
+
+                <div class="row pic text-center">
+                    <div class="col"><img src="media/origami/og/phoenix.jpg" id="phoenix" alt="Phoenix 3.5"></div>
+                    <div class="col"><img src="media/origami/og/scales.jpg" id="scales" alt="Scales of Ryujin 3.5"></div>
+                </div>
+
+                <div class="row desc">
+                    <div class="col">
+                        <h3>Phoenix 3.5</h3>
+                        <p>Designer: <span class="text-muted">Satoshi Kamiya (Works of Satoshi Kamiya 2 [2002-2009])</span></p>
+                        <p>Folded: <span class="text-muted">2022</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Ryujin 3.5 Scales</h3>
+                        <p>Designer of Ryujin 3.5: <span class="text-muted">Satoshi Kamiya</span></p>
+                        <p>Tutorial for Scales: <a href="https://www.youtube.com/@OrigamiSage" class="text-muted">Origami Sage</a></p>
+                        <p>Folded: 2022</p>
+                    </div>
+                </div>
+
+                <div class="row pic text-center">
+                    <div class="col"><img src="media/origami/og/hercules.jpg" id="hercules" alt="Samurai Helmet Beetle"></div>
+                    <div class="col"><img src="media/origami/og/lyrebird.jpg" id="lyrebird" alt="Lyrebird"></div>
+                </div>
+
+                <div class="row desc">
+                    <div class="col">
+                        <h3>Samurai Helmet Beetle</h3>
+                        <p>Designer: <span class="text-muted">Jun Maekawa (Genuine Origami [2008])</span></p>
+                        <p>Folded: <span class="text-muted">2023</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Lyrebird</h3>
+                        <p>Designer: <span class="text-muted">Satoshi Kamiya (Works of Satoshi Kamiya 2 [2002-2009])</span></p>
+                        <p>Folded: <span class="text-muted">2023</span></p>
+                    </div>
+                </div>
+
+                <div class="row pic text-center">
+                    <div class="col"><img src="media/origami/og/stingray.jpg" id="stingray" alt="Eagle Ray"></div>
+                    <div class="col"><img src="media/origami/og/Menger.jpg" id="Menger" alt="Menger Sponge"></div>
+                </div>
+
+                <div class="row desc">
+                    <div class="col">
+                        <h3>Eagle Ray</h3>
+                        <p>Designer: <span class="text-muted">Satoshi Kamiya (Works of Satoshi Kamiya [1995-2003])</span></p>
+                        <p>Folded: <span class="text-muted">2023</span></p>
+                    </div>
+                    <div class="col">
+                        <h3>Menger Sponge</h3>
+                        <p>Designer: <span class="text-muted">Jo Nakashima</span></p>
+                        <p>Folded: <span class="text-muted">2021</span></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer at the bottom of the page, static -->
+        <footer>
+            <div class="footer-container">
+                <!-- Link for my Instagram account that goes to separate page -->
+                <a href="https://www.instagram.com/gooseorigami/" target='_blank'><img src="media/logos/ig-logo.png" alt="Instagram Logo" height="30" width="30">Follow my Instagram!</a>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>

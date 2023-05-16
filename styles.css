@@ -1,0 +1,233 @@
+/* https://www.autodraw.com/ */
+
+/* Header fills top of page while scrolling */
+header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background-color: #211b66;
+    z-index: 2;
+    margin: 0;
+}
+
+/* https://github.com/pagelines/Docs/blob/master/tutorials/adding-custom-fonts.md */
+/* https://stackoverflow.com/questions/16056591/font-scaling-based-on-size-of-container */
+
+#head-title {
+    font-size: 8vh;
+    font-stretch: ultra-expanded;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: "Akronim";
+    margin: 5px 0px 0px 0px;
+    color: #8075FF;
+}
+
+#side-button{
+    border: none;
+    padding: 25px;
+}
+
+.fit, #future-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* https://www.w3schools.com/w3css/4/w3.css */
+
+#sidebar {
+    right: 0;
+    height: 100%;
+    position: fixed;
+    display: none;
+    z-index: 3;
+    opacity: 1;
+    background-color: white;
+    animation-name: right-open;
+    animation-duration: 0.5s;
+}
+
+.side-link li {
+    padding: 20px 20px;
+}
+
+.side-link li a {
+    text-decoration: none;
+    color: #211b66;
+    font-size: 4vh;
+}
+
+/* Animation right-open assocaited with side-bar */
+
+@keyframes right-open {
+    from {right: -300px; opacity: 0;}
+    to {right: 0px; opacity: 1;}
+}
+
+.header-container {
+    text-align: center;
+    width: 100%;
+}
+
+/* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css#:~:text=To%20remove%20bullets%20from%20a,type%3A%20none%20to%20your%20code.&text=This%20code%20targets%20the%20CSS,li%20and%20ul%20with%20CSS.*/
+
+ul {
+    list-style-type: none;
+}
+
+#buffer {
+    height: 120px;
+    background-color: #211b66;
+}
+
+/* https://www.w3schools.com/html/html_images_background.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Center_an_element */
+
+main {
+    top: 120px;
+    background-color: #FFECD1;
+}
+
+#intro {
+    width: 100%;
+    height: 700px;
+    background-image: url('media/origami/scorpion.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#alt-intro {
+    width: 100%;
+    height: 750px;
+    background-image: url('media/drawn/Drawnpion.png');
+    background-size: cover;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#side-button {
+    margin: 15px;
+}
+
+#intro b {
+    color: #D81E5B;
+    font-size: 100px;
+    font-family: 'Permanent Marker';
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+/* https://coder-coder.com/background-image-opacity/ */
+
+.block2, #future-wrapper p {
+    color: #8075FF;
+    font-size: 3vh;
+    font-family: 'Arial Narrow', sans-serif;
+    text-align: center;
+}
+
+.block2 img {
+    border: thick double #8075FF;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #211b66;
+    position: static;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container a {
+    color: white;
+    font-size: 20px;
+}
+
+.col a {
+    color: black;
+}
+
+.footer-container a, .col a {
+    text-decoration: none;
+}
+
+.footer-container a:hover, .col a:hover {
+    text-decoration: underline;
+}
+
+.specbutt {
+    float: right;
+    border-radius: 50%;
+    border: 5px solid gray;
+}
+
+#bad {
+    background-color: red;
+    padding: 8px;
+}
+
+#good {
+    background-color: purple;
+    padding: 5px;
+}
+
+/* https://www.w3docs.com/snippets/css/how-to-auto-resize-an-image-to-fit-an-html-container.html */
+
+/* portfolio.html */
+
+.pgheader {
+    text-align: center;
+    font-stretch: expanded;
+    font-size: 50px;
+    font-weight: bold;
+    color: #D81E5B;
+    font-family: Papyrus, Fantasy;
+}
+
+.pic div {
+    margin: 15px;
+    position: static;
+}
+
+.pic div img {
+    position: 50% 50%;
+    height: 400px;
+    max-width: 100%;
+    border: 3px solid black;
+}
+
+/* future.html */
+
+.future img {
+    margin: 25px 0px;
+}
+
+/* soundboard.html */
+
+.sound button {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+.colorchange {
+    animation-name: colorchange;
+    animation-duration: 4s;
+}
+
+@keyframes colorchange {
+    from {background-color: #211b66;}
+    to {background-color: purple;}
+}
